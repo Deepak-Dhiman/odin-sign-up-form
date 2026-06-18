@@ -9,10 +9,58 @@ img {
   max-inline-size: 100%;
 }
 
+.skranji-bold {
+  font-family: "Skranji", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+a {
+  color: white;
+}
+
 .flex-centered {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+body {
+  inline-size: 75rem;
+  margin-inline: auto;
+}
 
+section.flex-centered {
+  align-items: stretch;
+}
+
+.form-image {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+  flex: 1;
+
+  background-image: url("flower.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-block: 3rem 1rem;
+}
+
+.form-image > div {
+  background-color: rgba(17, 17, 17, 0.6);
+}
+
+.form-image img {
+  inline-size: 70px;
+  block-size: 58px;
+}
+
+.form-image > span {
+  text-align: center;
+}
+
+.form-content {
+  flex: 2;
+}
