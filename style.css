@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Mono", monospace;
 }
 
 img {
@@ -87,10 +88,36 @@ form.flex-centered {
   gap: 1rem;
 }
 
+form > * {
+  gap: 2rem;
+}
+
+.flex-centered.form-grp {
+  flex-direction: column;
+  align-items: start;
+}
+
+input {
+  width: 20rem;
+  padding: 0.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 8px rgba(80, 80, 80, 0.2);
+}
+
+input[type="password"]:user-invalid {
+  border: 1px solid red;
+}
+
 .submit button {
   background-color: #9a002a;
   color: white;
-  padding: .75rem 3rem;
+  padding: 0.75rem 3rem;
   border: none;
   border-radius: 8px;
 }

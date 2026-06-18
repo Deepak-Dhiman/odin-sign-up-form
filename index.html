@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -40,30 +46,55 @@
         <div class="flex-centered">
           <h2>Unleash the fury! 🥷</h2>
           <form action="" class="flex-centered">
-            <div>
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" />
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" />
+            <div class="flex-centered">
+              <div class="flex-centered form-grp">
+                <label for="first-name">First Name *</label>
+                <input type="text" name="first-name" id="first-name" required />
+              </div>
+              <div class="flex-centered form-grp">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
             </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" />
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" />
+            <div class="flex-centered">
+              <div class="flex-centered form-grp">
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="flex-centered form-grp">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
             </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" id="password" />
-              <label for="confirm">Confirm Password</label>
-              <input type="password" id="confirm" />
+            <div class="flex-centered">
+              <div class="flex-centered form-grp">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                  minlength="3"
+                  maxlength="16"
+                />
+              </div>
+              <div class="flex-centered form-grp">
+                <label for="confirm">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm"
+                  id="confirm"
+                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$"
+                  minlength="3"
+                  maxlength="16"
+                />
+              </div>
             </div>
           </form>
         </div>
         <div class="submit flex-centered">
           <button>Create Account</button>
           <p>Already have an account?<span> Log in</span></p>
-          
         </div>
       </div>
     </section>
